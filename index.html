@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Form</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Yoga Admission Form</h1>
+  </header>
+  <img src="yoga-removebg-preview.png" alt="Yoga Class Image">
+  <p id="output-message" class="form-control"></p>
+  <p>Please enter the details.
+  </p>
+  <p>Charges: Rs 500/month</p>
+  <br>
+  <button id="Login" type="submit" name="action" onclick="parent.location='Login.html'" value="update">For Registered
+    Users</button>
+  <br>
+  <form id="formdata" class="yogaForm">
+    <label for="name">First Name:</label>
+    <input type="text" name="first_name" id="first_name" class="form-control" required>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" class="form-control" id="last_name" required>
+
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" name="email" id="email" required>
+
+    <label for="contact_number">Contact Number:</label>
+    <input type="text" class="form-control" name="contact_number" id="contact_number" required>
+    <label>Gender:</label>
+    <input type="radio" class="form-control" name="gender" id="g1" value='Male' required><label for="gender"
+      class="light">Male</label><br>
+    <input type="radio" class="form-control" name="gender" id="g2" value='Female' required><label for="gender"
+      class="light">Female</label><br>
+    <br>
+    <label for="batch">Preferred Batch:</label>
+    <select id="batch_id" required>
+      <option value="1">6-7AM</option>
+      <option value="2">7-8AM</option>
+      <option value="3">8-9AM</option>
+      <option value="4">5-6PM</option>
+    </select>
+
+    <button type="submit" id="submit" value="submit" name="action">Submit</button>
+  </form>
+  <div style="height: 200px;"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="index.js" type="text/javascript">
+  </script>
+</body>
+
+</html>
